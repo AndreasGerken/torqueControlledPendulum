@@ -240,7 +240,7 @@ void setMotorSpeed(int mSpeed){
   bool rev = mSpeed > 0;
   digitalWrite(pinRev1, rev);
   digitalWrite(pinRev2, !rev);
-  analogWrite(pinEnable,abs(mSpeed / 1 ));
+  analogWrite(pinEnable,abs(mSpeed));
 }
 
 
